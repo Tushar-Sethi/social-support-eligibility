@@ -1,7 +1,0 @@
-Type,Category,Description,Amount
-Asset,Cash,Checking Account Balance,5000
-Asset,Investment,Stock Portfolio,12000
-Asset,Property,Residential Home,250000
-Liability,Credit Card,Visa Card Balance,-2000
-Liability,Loan,Car Loan,-15000
-Liability,Loan,Student Loan,-30000
