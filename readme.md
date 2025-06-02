@@ -4,11 +4,10 @@
 
 1. [Project Overview](#project-overview)  
 2. [Features](#features)  
-3. [Architecture](#architecture)  
-4. [Installation](#installation)  
-5. [Usage](#usage)  
-6. [File Structure](#file-structure)  
-7. [Configuration](#configuration)  
+3. [Installation](#installation)  
+4. [Usage](#usage)  
+5. [File Structure](#file-structure)  
+6. [Configuration](#configuration)  
 
 
 ## Project Overview
@@ -55,11 +54,6 @@ While designed as a Streamlit prototype, it can be extended into a standalone AP
 
 - **Conversational Assistance**  
   - Context-aware chat interface that answers follow-up questions about validation errors, eligibility rationale, or next steps.
-
-## architecture
-
-<img src="architecture_diagram.svg" alt="Architecture Diagram" width="800" />
-
 
 ## Installation
 
