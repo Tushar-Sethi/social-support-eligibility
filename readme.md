@@ -97,6 +97,7 @@ While designed as a Streamlit prototype, it can be extended into a standalone AP
 
 
 ## File Structure
+```
 application/
 │
 ├── Index.py
@@ -161,7 +162,7 @@ application/
 │
 ├── requirements.txt
 │   └─ Pinned Python dependencies for easy installation
-
+```
 
 ## Configuration
     - LLM Settings
