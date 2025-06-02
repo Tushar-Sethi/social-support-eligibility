@@ -56,6 +56,9 @@ While designed as a Streamlit prototype, it can be extended into a standalone AP
 - **Conversational Assistance**  
   - Context-aware chat interface that answers follow-up questions about validation errors, eligibility rationale, or next steps.
 
+## architecture
+
+<img src="architecture_diagram.svg" alt="Architecture Diagram" width="800" />
 
 
 ## Installation
