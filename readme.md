@@ -97,7 +97,7 @@ While designed as a Streamlit prototype, it can be extended into a standalone AP
 
 
 ## File Structure
-application/\n
+application/
 │
 ├── Index.py
 │   └─ Main Streamlit application (forms, file uploads, state management)
