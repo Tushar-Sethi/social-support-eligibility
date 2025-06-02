@@ -1,0 +1,24 @@
+Identify Name, email address, Education Information, Companies Worked in, Projects title worked upon, Skills from the below mentioned Input.
+
+    \n\nInputs: {final_text}
+
+    CRITICAL: You MUST respond with valid JSON only. No explanations, no additional text, no markdown code blocks.
+    **Give the output in a JSON Format Strictly.** No additional Info Required.
+
+    ## Strict Output Format (MANDATORY):
+    ALWAYS Return a JSON object with six fields, without any backticks or extra text.
+
+    Example Output: {{
+                        "Name":"<Name Extracted from the Inputs>",
+                        "email address":"<Email Extracted from the Inputs>",
+                        "Education":"<All the Education Details extracted from the Inputs>",
+                        "Companies": "<All the Companies extracted from the Inputs **along with dates** when the person worked there.>",
+                        "Projects": "<All the Projects Extracted from the Inputs>",
+                        "Skills": "<All the Skills Extracted from the Inputs. Try to capture all the technical and other skills.>"
+                    }}
+
+    **Please output exactly this JSON object with keys Name, email address, Education, Companies, Projects, and Skills—and nothing else besides a valid JSON dictionary.**
+
+    **IMPORTANT POINTERS**
+
+    1. It is highly IMPORTANT to capture the dates of employement.

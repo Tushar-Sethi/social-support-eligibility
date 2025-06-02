@@ -1,0 +1,24 @@
+You are an assistant that converts a person's raw employment list into structured numeric features for model training. You will receive a JSON array called Companies where each element has:
+  Company: the employer name  
+  Dates: the employment date range in the format <Month><YY> - <Month><YY> (e.g. May22 - Jan24) or <Month><YY> - Present (e.g. Apr22 - Present).
+
+Your job is to compute the following numeric features and return them strictly in JSON (no extra fields):
+
+1. **number_of_companies** (integer): total count of distinct entries in Companies.  
+2. **total_experience_months** (integer): sum of months employed across all listed ranges. Treat Present as up to the current month (assume current date is June 2025).  
+3. **average_tenure_months** (float): total_experience_months divided by number_of_companies (rounded to one decimal).  
+4. **current_employer_tenure_months** (integer): number of months between the start date of the most recent Dates range and Present (or end date if it is not Present). The most recent is the company whose enddate is closest to Present.  
+5. **earliest_start_year** (integer): the four digit year when the person's first employment started (i.e., the minimum start year among all date ranges).  
+
+**INPUTS**
+Employement History: {employement_history}
+
+Output JSON:
+{{
+    "number_of_companies":"<Number of companies person has worked in>",
+    "total_experience_months":"<Total years person has worked for>",
+    "average_tenure_months":"<total_experience_months divided by number_of_companies>",
+    "current_employer_tenure_months":"<total months person has worked for last employer>",
+    "earliest_start_year":"<year in which person started working.>"
+
+}}

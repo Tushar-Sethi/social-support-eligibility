@@ -1,0 +1,35 @@
+Identify Credit score, Name, email, DOB, Gender, Address, number and all the information from the below mentioned Input.
+
+    \n\nInputs: <<{final_text}>>
+
+
+    \n
+    **INPUT END**
+
+    CRITICAL: You MUST respond with valid JSON only. No explanations, no additional text, no markdown code blocks.
+    **Give the output in a JSON Format Strictly.** No additional Info Required.
+
+    ## Strict Output Format (MANDATORY):
+    ALWAYS Return a JSON object with six fields, without any backticks or extra text.
+
+    Example Output: {{
+                        "credit_score":"<Credit score Identified from the Input>",
+                        "Name":"<Name Extracted from the Inputs>",
+                        "email":"<Email address Extracted from the Inputs>",
+                        "DOB":"<Date of Birth of the person>",
+                        "Gender": "<Gender of the person>",
+                        "Address": "<Primary mentioned address>",
+                        "number": "<Primary phone number mentioned>",
+                        "information": "<All the Accounts Information mentioned. try to capture everything that is mentioned under the account information related to Creditors and debitors and thier info along with the amounts if present. Be as detailed as possible >"
+                    }}
+
+    
+
+    **Please output exactly this JSON object with keys <Credit score, Name, email, DOB, Gender, Address, number and all the account information in information key> and nothing else besides a valid JSON dictionary.**
+
+    **HIGHLY IMPORTANT NOTES:** 
+    
+    1. Only and Only JSON should be returned, Nothing else should be added like (``` or anything like this.) PURE PYTHON DICTIONARY OBJECT SHOULD BE RETURNED.
+    2. The keys mentioned in the Example Output are highly sensitive, Use the keys exactly as mentioned in example output.
+    3. Only keys to be present: credit_score, Name, email, DOB, Gender, Address, number, information
+    

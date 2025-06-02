@@ -1,0 +1,19 @@
+Identify Name, ID Number and Nationality from the below mentioned Input.
+
+    \n\nInputs: {final_text}
+
+    CRITICAL: You MUST respond with valid JSON only. No explanations, no additional text, no markdown code blocks.
+    **Give the output in a JSON Format Strictly.** No additional Info Required.
+
+    ## Strict Output Format (MANDATORY):
+    ALWAYS Return a JSON object with six fields, without any backticks or extra text.
+
+    Example Output: {{
+                        
+                        "Name":"<Name Extracted from the Inputs>",
+                        "ID": "<ID mentioned>"
+                        "Nationality":"<Nationality Mentioned>"
+                    }}
+
+    **Please output exactly this JSON object with keys <Name, ID Number and Nationality> and nothing else besides a valid JSON dictionary.**
+    
